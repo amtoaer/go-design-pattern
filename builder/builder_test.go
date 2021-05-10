@@ -24,6 +24,6 @@ func TestBuilder(t *testing.T) {
 		score: score,
 	}
 	if reflect.DeepEqual(a, b) == false {
-		t.Errorf("error when build object")
+		t.Error("建造者模式出现错误")
 	}
 }
